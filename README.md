@@ -19,8 +19,41 @@
 * ***结构型模式***介绍如何将对象和类组装成较大的结构， 并同时保持结构的灵活和高效。
 * ***行为模式***负责对象间的高效沟通和职责委派。
 
-[TOC]
-创建型模式
-结构型模式
-行为模式
+.
+├── 1.text
+├── Design
+│   ├── Design
+│   │   ├── AppDelegate.swift
+│   │   ├── Assets.xcassets
+│   │   │   ├── AccentColor.colorset
+│   │   │   │   └── Contents.json
+│   │   │   ├── AppIcon.appiconset
+│   │   │   │   └── Contents.json
+│   │   │   └── Contents.json
+│   │   ├── Base.lproj
+│   │   │   ├── LaunchScreen.storyboard
+│   │   │   └── Main.storyboard
+│   │   ├── Info.plist
+│   │   ├── SceneDelegate.swift
+│   │   └── ViewController.swift
+│   ├── Design.xcodeproj
+│   │   ├── project.pbxproj
+│   │   ├── project.xcworkspace
+│   │   │   ├── contents.xcworkspacedata
+│   │   │   ├── xcshareddata
+│   │   │   │   └── IDEWorkspaceChecks.plist
+│   │   │   └── xcuserdata
+│   │   │       └── zhongwei.xcuserdatad
+│   │   │           └── UserInterfaceState.xcuserstate
+│   │   └── xcuserdata
+│   │       └── zhongwei.xcuserdatad
+│   │           └── xcschemes
+│   │               └── xcschememanagement.plist
+│   ├── DesignTests
+│   │   └── DesignTests.swift
+│   └── DesignUITests
+│       ├── DesignUITests.swift
+│       └── DesignUITestsLaunchTests.swift
+├── LICENSE
+└── README.md
 
