@@ -30,6 +30,36 @@
 		4A893D3027E9C8E500ABC441 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D2E27E9C8E500ABC441 /* Adapter.swift */; };
 		4A893D3327E9D86900ABC441 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D3227E9D86900ABC441 /* Bridge.swift */; };
 		4A893D3427E9D86900ABC441 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D3227E9D86900ABC441 /* Bridge.swift */; };
+		4A893D3727E9E70100ABC441 /* Combination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D3627E9E70100ABC441 /* Combination.swift */; };
+		4A893D3827E9E70100ABC441 /* Combination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D3627E9E70100ABC441 /* Combination.swift */; };
+		4A893D3B27E9FDB100ABC441 /* Decorate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D3A27E9FDB100ABC441 /* Decorate.swift */; };
+		4A893D3C27E9FDB100ABC441 /* Decorate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D3A27E9FDB100ABC441 /* Decorate.swift */; };
+		4A893D3F27E9FE7500ABC441 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D3E27E9FE7500ABC441 /* Facade.swift */; };
+		4A893D4027E9FE7500ABC441 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D3E27E9FE7500ABC441 /* Facade.swift */; };
+		4A893D4327E9FF8C00ABC441 /* Flyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D4227E9FF8C00ABC441 /* Flyweight.swift */; };
+		4A893D4427E9FF8C00ABC441 /* Flyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D4227E9FF8C00ABC441 /* Flyweight.swift */; };
+		4A893D4727EA001000ABC441 /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D4627EA001000ABC441 /* Proxy.swift */; };
+		4A893D4827EA001000ABC441 /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D4627EA001000ABC441 /* Proxy.swift */; };
+		4A893D4B27EA01BA00ABC441 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D4A27EA01BA00ABC441 /* Chain.swift */; };
+		4A893D4C27EA01BA00ABC441 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D4A27EA01BA00ABC441 /* Chain.swift */; };
+		4A893D4F27EA026300ABC441 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D4E27EA026300ABC441 /* Command.swift */; };
+		4A893D5027EA026300ABC441 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D4E27EA026300ABC441 /* Command.swift */; };
+		4A893D5327EA031600ABC441 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D5227EA031600ABC441 /* Iterator.swift */; };
+		4A893D5427EA031600ABC441 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D5227EA031600ABC441 /* Iterator.swift */; };
+		4A893D5727EA04D100ABC441 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D5627EA04D100ABC441 /* Mediator.swift */; };
+		4A893D5827EA04D100ABC441 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D5627EA04D100ABC441 /* Mediator.swift */; };
+		4A893D5B27EA061900ABC441 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D5A27EA061900ABC441 /* Memento.swift */; };
+		4A893D5C27EA061900ABC441 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D5A27EA061900ABC441 /* Memento.swift */; };
+		4A893D5F27EA067F00ABC441 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D5E27EA067F00ABC441 /* Listener.swift */; };
+		4A893D6027EA067F00ABC441 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D5E27EA067F00ABC441 /* Listener.swift */; };
+		4A893D6327EA0A9F00ABC441 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D6227EA0A9F00ABC441 /* State.swift */; };
+		4A893D6427EA0A9F00ABC441 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D6227EA0A9F00ABC441 /* State.swift */; };
+		4A893D6727EA0C6000ABC441 /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D6627EA0C6000ABC441 /* Strategy.swift */; };
+		4A893D6827EA0C6000ABC441 /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D6627EA0C6000ABC441 /* Strategy.swift */; };
+		4A893D6B27EA0DCB00ABC441 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D6A27EA0DCB00ABC441 /* Template.swift */; };
+		4A893D6C27EA0DCB00ABC441 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D6A27EA0DCB00ABC441 /* Template.swift */; };
+		4A893D6F27EA0EDA00ABC441 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D6E27EA0EDA00ABC441 /* Visitor.swift */; };
+		4A893D7027EA0EDA00ABC441 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D6E27EA0EDA00ABC441 /* Visitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +100,21 @@
 		4A893D2A27E9C1DB00ABC441 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		4A893D2E27E9C8E500ABC441 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		4A893D3227E9D86900ABC441 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		4A893D3627E9E70100ABC441 /* Combination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combination.swift; sourceTree = "<group>"; };
+		4A893D3A27E9FDB100ABC441 /* Decorate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorate.swift; sourceTree = "<group>"; };
+		4A893D3E27E9FE7500ABC441 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
+		4A893D4227E9FF8C00ABC441 /* Flyweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweight.swift; sourceTree = "<group>"; };
+		4A893D4627EA001000ABC441 /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		4A893D4A27EA01BA00ABC441 /* Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		4A893D4E27EA026300ABC441 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		4A893D5227EA031600ABC441 /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		4A893D5627EA04D100ABC441 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
+		4A893D5A27EA061900ABC441 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
+		4A893D5E27EA067F00ABC441 /* Listener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listener.swift; sourceTree = "<group>"; };
+		4A893D6227EA0A9F00ABC441 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		4A893D6627EA0C6000ABC441 /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
+		4A893D6A27EA0DCB00ABC441 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		4A893D6E27EA0EDA00ABC441 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +165,21 @@
 		4A893CE827E8B02500ABC441 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				4A893D6D27EA0ECF00ABC441 /* Visitor */,
+				4A893D6927EA0DC300ABC441 /* Template */,
+				4A893D6527EA0C5600ABC441 /* Strategy */,
+				4A893D6127EA0A9600ABC441 /* State */,
+				4A893D5D27EA067300ABC441 /* Listener */,
+				4A893D5927EA061000ABC441 /* Memento */,
+				4A893D5527EA04C700ABC441 /* Mediator */,
+				4A893D5127EA030C00ABC441 /* Iterator */,
+				4A893D4D27EA025200ABC441 /* Command */,
+				4A893D4927EA01A700ABC441 /* Chain */,
+				4A893D4527EA000100ABC441 /* Proxy */,
+				4A893D4127E9FF7F00ABC441 /* Flyweight */,
+				4A893D3D27E9FE6D00ABC441 /* Facade */,
+				4A893D3927E9FDA300ABC441 /* Decorate */,
+				4A893D3527E9E6F200ABC441 /* Combination */,
 				4A893D3127E9D19100ABC441 /* Bridge */,
 				4A893D2D27E9C88300ABC441 /* Adapter */,
 				4A893D2927E9C1D000ABC441 /* Singleton */,
@@ -201,6 +261,126 @@
 				4A893D3227E9D86900ABC441 /* Bridge.swift */,
 			);
 			path = Bridge;
+			sourceTree = "<group>";
+		};
+		4A893D3527E9E6F200ABC441 /* Combination */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D3627E9E70100ABC441 /* Combination.swift */,
+			);
+			path = Combination;
+			sourceTree = "<group>";
+		};
+		4A893D3927E9FDA300ABC441 /* Decorate */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D3A27E9FDB100ABC441 /* Decorate.swift */,
+			);
+			path = Decorate;
+			sourceTree = "<group>";
+		};
+		4A893D3D27E9FE6D00ABC441 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D3E27E9FE7500ABC441 /* Facade.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		4A893D4127E9FF7F00ABC441 /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D4227E9FF8C00ABC441 /* Flyweight.swift */,
+			);
+			path = Flyweight;
+			sourceTree = "<group>";
+		};
+		4A893D4527EA000100ABC441 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D4627EA001000ABC441 /* Proxy.swift */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		4A893D4927EA01A700ABC441 /* Chain */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D4A27EA01BA00ABC441 /* Chain.swift */,
+			);
+			path = Chain;
+			sourceTree = "<group>";
+		};
+		4A893D4D27EA025200ABC441 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D4E27EA026300ABC441 /* Command.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		4A893D5127EA030C00ABC441 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D5227EA031600ABC441 /* Iterator.swift */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
+		4A893D5527EA04C700ABC441 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D5627EA04D100ABC441 /* Mediator.swift */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		4A893D5927EA061000ABC441 /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D5A27EA061900ABC441 /* Memento.swift */,
+			);
+			path = Memento;
+			sourceTree = "<group>";
+		};
+		4A893D5D27EA067300ABC441 /* Listener */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D5E27EA067F00ABC441 /* Listener.swift */,
+			);
+			path = Listener;
+			sourceTree = "<group>";
+		};
+		4A893D6127EA0A9600ABC441 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D6227EA0A9F00ABC441 /* State.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		4A893D6527EA0C5600ABC441 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D6627EA0C6000ABC441 /* Strategy.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		4A893D6927EA0DC300ABC441 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D6A27EA0DCB00ABC441 /* Template.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		4A893D6D27EA0ECF00ABC441 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D6E27EA0EDA00ABC441 /* Visitor.swift */,
+			);
+			path = Visitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,15 +514,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A893D4F27EA026300ABC441 /* Command.swift in Sources */,
+				4A893D3B27E9FDB100ABC441 /* Decorate.swift in Sources */,
 				4A893D3327E9D86900ABC441 /* Bridge.swift in Sources */,
+				4A893D6327EA0A9F00ABC441 /* State.swift in Sources */,
 				4A893D1B27E9724D00ABC441 /* Factory.swift in Sources */,
+				4A893D5F27EA067F00ABC441 /* Listener.swift in Sources */,
+				4A893D4327E9FF8C00ABC441 /* Flyweight.swift in Sources */,
+				4A893D5727EA04D100ABC441 /* Mediator.swift in Sources */,
+				4A893D4727EA001000ABC441 /* Proxy.swift in Sources */,
 				4A893D2F27E9C8E500ABC441 /* Adapter.swift in Sources */,
 				4A893CEE27E8B02500ABC441 /* ViewController.swift in Sources */,
 				4A893D1E27E979E500ABC441 /* AbstractFactory.swift in Sources */,
 				4A893CEA27E8B02500ABC441 /* AppDelegate.swift in Sources */,
+				4A893D4B27EA01BA00ABC441 /* Chain.swift in Sources */,
 				4A893D2727E9BB5100ABC441 /* Clone.swift in Sources */,
 				4A893D2B27E9C1DB00ABC441 /* Singleton.swift in Sources */,
 				4A893CEC27E8B02500ABC441 /* SceneDelegate.swift in Sources */,
+				4A893D3727E9E70100ABC441 /* Combination.swift in Sources */,
+				4A893D6727EA0C6000ABC441 /* Strategy.swift in Sources */,
+				4A893D5327EA031600ABC441 /* Iterator.swift in Sources */,
+				4A893D5B27EA061900ABC441 /* Memento.swift in Sources */,
+				4A893D6B27EA0DCB00ABC441 /* Template.swift in Sources */,
+				4A893D3F27E9FE7500ABC441 /* Facade.swift in Sources */,
+				4A893D6F27EA0EDA00ABC441 /* Visitor.swift in Sources */,
 				4A893D2327E9ABEC00ABC441 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,12 +546,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A893D5827EA04D100ABC441 /* Mediator.swift in Sources */,
+				4A893D3827E9E70100ABC441 /* Combination.swift in Sources */,
+				4A893D4827EA001000ABC441 /* Proxy.swift in Sources */,
+				4A893D6427EA0A9F00ABC441 /* State.swift in Sources */,
+				4A893D4427E9FF8C00ABC441 /* Flyweight.swift in Sources */,
+				4A893D5427EA031600ABC441 /* Iterator.swift in Sources */,
+				4A893D7027EA0EDA00ABC441 /* Visitor.swift in Sources */,
 				4A893D1F27E979E500ABC441 /* AbstractFactory.swift in Sources */,
+				4A893D6C27EA0DCB00ABC441 /* Template.swift in Sources */,
 				4A893D2C27E9C1DB00ABC441 /* Singleton.swift in Sources */,
 				4A893D1C27E9724D00ABC441 /* Factory.swift in Sources */,
+				4A893D3C27E9FDB100ABC441 /* Decorate.swift in Sources */,
 				4A893D2827E9BB5100ABC441 /* Clone.swift in Sources */,
+				4A893D5027EA026300ABC441 /* Command.swift in Sources */,
+				4A893D4027E9FE7500ABC441 /* Facade.swift in Sources */,
+				4A893D4C27EA01BA00ABC441 /* Chain.swift in Sources */,
 				4A893D3427E9D86900ABC441 /* Bridge.swift in Sources */,
 				4A893D0127E8B02700ABC441 /* DesignTests.swift in Sources */,
+				4A893D6027EA067F00ABC441 /* Listener.swift in Sources */,
+				4A893D6827EA0C6000ABC441 /* Strategy.swift in Sources */,
+				4A893D5C27EA061900ABC441 /* Memento.swift in Sources */,
 				4A893D2427E9ABEC00ABC441 /* Builder.swift in Sources */,
 				4A893D3027E9C8E500ABC441 /* Adapter.swift in Sources */,
 			);
