@@ -17,12 +17,14 @@ import Foundation
 5 客户端代码只需通过接口与适配器交互即可， 无需与具体的适配器类耦合。 因此， 你可以向程序中添加新类型的适配器而无需修改已有代码。 这在服务类的接口被更改或替换时很有用： 你无需修改客户端代码就可以创建新的适配器类。
  */
 
+//需要被适配的类
 class Target {
     func request() -> String {
         return "Target: The default target's behavior."
     }
 }
 
+//需要适配的类
 class Adaptee {
     public func specificRequest() -> String {
         return ".eetpadA eht fo roivaheb laicepS"

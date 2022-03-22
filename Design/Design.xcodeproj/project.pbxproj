@@ -28,6 +28,8 @@
 		4A893D2C27E9C1DB00ABC441 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D2A27E9C1DB00ABC441 /* Singleton.swift */; };
 		4A893D2F27E9C8E500ABC441 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D2E27E9C8E500ABC441 /* Adapter.swift */; };
 		4A893D3027E9C8E500ABC441 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D2E27E9C8E500ABC441 /* Adapter.swift */; };
+		4A893D3327E9D86900ABC441 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D3227E9D86900ABC441 /* Bridge.swift */; };
+		4A893D3427E9D86900ABC441 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D3227E9D86900ABC441 /* Bridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,7 @@
 		4A893D2627E9BB5100ABC441 /* Clone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clone.swift; sourceTree = "<group>"; };
 		4A893D2A27E9C1DB00ABC441 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		4A893D2E27E9C8E500ABC441 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		4A893D3227E9D86900ABC441 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 		4A893CE827E8B02500ABC441 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				4A893D3127E9D19100ABC441 /* Bridge */,
 				4A893D2D27E9C88300ABC441 /* Adapter */,
 				4A893D2927E9C1D000ABC441 /* Singleton */,
 				4A893D2527E9BA8C00ABC441 /* Clone */,
@@ -189,6 +193,14 @@
 				4A893D2E27E9C8E500ABC441 /* Adapter.swift */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		4A893D3127E9D19100ABC441 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D3227E9D86900ABC441 /* Bridge.swift */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A893D3327E9D86900ABC441 /* Bridge.swift in Sources */,
 				4A893D1B27E9724D00ABC441 /* Factory.swift in Sources */,
 				4A893D2F27E9C8E500ABC441 /* Adapter.swift in Sources */,
 				4A893CEE27E8B02500ABC441 /* ViewController.swift in Sources */,
@@ -342,6 +355,7 @@
 				4A893D2C27E9C1DB00ABC441 /* Singleton.swift in Sources */,
 				4A893D1C27E9724D00ABC441 /* Factory.swift in Sources */,
 				4A893D2827E9BB5100ABC441 /* Clone.swift in Sources */,
+				4A893D3427E9D86900ABC441 /* Bridge.swift in Sources */,
 				4A893D0127E8B02700ABC441 /* DesignTests.swift in Sources */,
 				4A893D2427E9ABEC00ABC441 /* Builder.swift in Sources */,
 				4A893D3027E9C8E500ABC441 /* Adapter.swift in Sources */,
