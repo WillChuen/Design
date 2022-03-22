@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import XCTest
 
 /*
  当你需要创建一个可能有许多配置选项的对象时
@@ -16,6 +17,9 @@ import UIKit
  3 产品 （Products） 是最终生成的对象。 由不同生成器构造的产品无需属于同一类层次结构或接口。
  4 主管 （Director） 类定义调用构造步骤的顺序， 这样你就可以创建和复用特定的产品配置。
  5 客户端 （Client） 必须将某个生成器对象与主管类关联。 一般情况下， 你只需通过主管类构造函数的参数进行一次性关联即可。 此后主管类就能使用生成器对象完成后续所有的构造任务。 但在客户端将生成器对象传递给主管类制造方法时还有另一种方式。 在这种情况下， 你在使用主管类生产产品时每次都可以使用不同的生成器。
+ 
+ 生成器模式可避免 “重叠构造函数 （telescopic constructor）” 的出现
+ 生成器模式是 Swift 世界中的一个著名模式。 当你需要创建一个可能有许多配置选项的对象时， 该模式会特别有用
  */
 
 /// 生成器 （Builder） 接口声明在所有类型生成器中通用的产品构造步骤。
@@ -101,6 +105,14 @@ class BuilderClient {
         builder.producePartA()
         builder.producePartC()
         print(builder.retrieveProduct().listParts())
+    }
+}
+
+class BuilderConceptual: XCTestCase {
+
+    func testBuilderConceptual() {
+        let director = Director()
+        BuilderClient.someClientCode(director: director)
     }
 }
 

@@ -6,18 +6,19 @@
 //
 
 import UIKit
+import XCTest
 
 /*
  单例模式是一种创建型设计模式， 让你能够保证一个类只有一个实例， 并提供一个访问该实例的全局节点。
  单例模式结构
  1 单例 （Singleton） 类声明了一个名为 get­Instance获取实例的静态方法来返回其所属类的一个相同实例。单例的构造函数必须对客户端 （Client） 代码隐藏。 调用 获取实例方法必须是获取单例对象的唯一方式。
  */
-
 /*
  将默认构造函数设为私有， 防止其他对象使用单例类的 new运算符。
  新建一个静态构建方法作为构造函数。 该函数会 “偷偷” 调用私有构造函数来创建对象， 并将其保存在一个静态成员变量中。 此后所有对于该函数的调用都将返回这一缓存对象
- 
+ 违反了_单一职责原则_。 该模式同时解决了两个问题
  */
+
 class Singleton {
     
     static var shared: Singleton = {
@@ -54,3 +55,12 @@ class SingletonClient {
     }
     // ...
 }
+
+/// Let's see how it all works together.
+class SingletonConceptual: XCTestCase {
+    
+    func testSingletonConceptual() {
+        SingletonClient.someClientCode()
+    }
+}
+

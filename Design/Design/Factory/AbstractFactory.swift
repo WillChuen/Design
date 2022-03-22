@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import XCTest
 
 /*
  抽象工厂模式是一种创建型设计模式， 它能创建一系列相关的对象， 而无需指定其具体类。
@@ -17,15 +18,13 @@ import UIKit
  5 尽管具体工厂会对具体产品进行初始化， 其构建方法签名必须返回相应的抽象产品。 这样， 使用工厂类的客户端代码就不会与工厂创建的特定产品变体耦合。 客户端 （Client） 只需通过抽象接口调用工厂和产品对象， 就能与任何具体工厂/产品变体交互。
  */
 
-///抽象工厂
+///3抽象工厂 （Abstract Factory） 接口声明了一组创建各种抽象产品的方法。
 protocol AbstractFactory {
     func createProductA() -> AbstractProductA
     func createProductB() -> AbstractProductB
 }
 
-/*
- 在创建产品时， 客户端代码调用的是工厂对象的构建方法， 而不是直接调用构造函数 （ new操作符）。 由于一个工厂对应一种产品变体， 因此它创建的所有产品都可相互兼容。
- */
+///具体工厂 （Concrete Factory） 实现抽象工厂的构建方法。 每个具体工厂都对应特定产品变体， 且仅创建此种产品变体。
 class ConcreteFactory1: AbstractFactory {
     
     func createProductA() -> AbstractProductA {
@@ -35,6 +34,7 @@ class ConcreteFactory1: AbstractFactory {
         return ConcreteProductB1()
     }
 }
+///具体工厂 （Concrete Factory） 实现抽象工厂的构建方法。 每个具体工厂都对应特定产品变体， 且仅创建此种产品变体。
 class ConcreteFactory2: AbstractFactory {
     
     func createProductA() -> AbstractProductA {
@@ -45,18 +45,19 @@ class ConcreteFactory2: AbstractFactory {
     }
 }
 
-//抽象工厂定义了用于创建不同产品的接口， 但将实际的创建工作留给了具体工厂类。 每个工厂类型都对应一个特定的产品变体。
+///抽象产品 （Abstract ˈæbstrækt Product） 为构成系列产品的一组不同但相关的产品声明接口。
 protocol AbstractProductA {
     func usefulFunctionA() -> String
 }
 
+///具体产品 （Concrete ˈkɑːnkriːt Product） 是抽象产品的多种不同类型实现。
 class ConcreteProductA1: AbstractProductA {
 
     func usefulFunctionA() -> String {
         return "The result of the product A1."
     }
 }
-
+///具体产品 （Concrete ˈkɑːnkriːt Product） 是抽象产品的多种不同类型实现。
 class ConcreteProductA2: AbstractProductA {
 
     func usefulFunctionA() -> String {
@@ -64,14 +65,14 @@ class ConcreteProductA2: AbstractProductA {
     }
 }
 
-///抽象产品
+///抽象产品 （Abstract ˈæbstrækt Product） 为构成系列产品的一组不同但相关的产品声明接口。
 protocol AbstractProductB {
     
     func usefulFunctionB() -> String
     func anotherUsefulFunctionB(collaborator: AbstractProductA) -> String
 }
 
-///具体产品
+///具体产品 （Concrete ˈkɑːnkriːt Product） 是抽象产品的多种不同类型实现。
 class ConcreteProductB1: AbstractProductB {
     
     func usefulFunctionB() -> String {
@@ -83,7 +84,7 @@ class ConcreteProductB1: AbstractProductB {
     }
 }
 
-///具体产品
+///具体产品 （Concrete ˈkɑːnkriːt Product） 是抽象产品的多种不同类型实现。
 class ConcreteProductB2: AbstractProductB {
     
     func usefulFunctionB() -> String {
@@ -103,6 +104,20 @@ class AbstractClient {
         let productB = factory.createProductB()
         print(productB.usefulFunctionB())
         print(productB.anotherUsefulFunctionB(collaborator: productA))
+    }
+}
+
+/// Let's see how it all works together.
+class AbstractFactoryConceptual: XCTestCase {
+
+    func testAbstractFactoryConceptual() {
+        
+        /// The client code can work with any concrete factory class.
+        print("Client: Testing client code with the first factory type:")
+        AbstractClient.someClientCode(factory: ConcreteFactory1())
+
+        print("Client: Testing the same client code with the second factory type:")
+        AbstractClient.someClientCode(factory: ConcreteFactory2())
     }
 }
 
