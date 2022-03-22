@@ -19,12 +19,18 @@ class DesignTests: XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        
+        //一般工厂方法
+        factoryTest()
     }
+    
+    func factoryTest() {
+        print("具体创建者1")
+        Client.someClientCode(creator: ConcreteCreator1())
+        print("\n具体创建者2")
+        Client.someClientCode(creator: ConcreteCreator2())
+    }
+    
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
