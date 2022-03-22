@@ -19,7 +19,7 @@ class DesignTests: XCTestCase {
     }
     
     func testExample() throws {
-        builderClientTest()
+        cloneTest()
     }
     
     //一般工厂
@@ -43,11 +43,19 @@ class DesignTests: XCTestCase {
     
     //生成器
     func builderClientTest() {
-        
         let director = Director()
         BuilderClient.someClientCode(director: director)
     }
     
+    //原型
+    func cloneTest() {
+        CloneClient.someClientCode()
+    }
+    
+    //单例
+    func SingletonTest() {
+        SingletonClient.someClientCode()
+    }
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
