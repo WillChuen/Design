@@ -29,7 +29,7 @@ extension Creator {
     
     func someOperation() -> String {
         let product = factoryMethod()
-        return "Creator: The same creator's code has just worked with " + product.operation()
+        return "Creator: 对每个产品应用相同的操作 " + product.operation()
     }
 }
 
@@ -58,14 +58,14 @@ protocol Product {
 class ConcreteProduct1: Product {
     
     func operation() -> String {
-        return "{Result of the ConcreteProduct1}"
+        return "我是具体产品1"
     }
 }
 
 ///具体产品
 class ConcreteProduct2: Product {
     func operation() -> String {
-        return "{Result of the ConcreteProduct2}"
+        return "我是具体产品2"
     }
 }
 
