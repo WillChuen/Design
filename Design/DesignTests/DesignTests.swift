@@ -17,13 +17,12 @@ class DesignTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    
     func testExample() throws {
-        
-        //一般工厂方法
-        factoryTest()
+        builderClientTest()
     }
     
+    //一般工厂
     func factoryTest() {
         print("具体创建者1")
         Client.someClientCode(creator: ConcreteCreator1())
@@ -31,7 +30,24 @@ class DesignTests: XCTestCase {
         Client.someClientCode(creator: ConcreteCreator2())
     }
     
+    //抽象工厂
+    func abstractTest() {
+        
+        print("Client: Testing client code with the first factory type:")
+        AbstractClient.someClientCode(factory: ConcreteFactory1())
 
+        print("Client: Testing the same client code with the second factory type:")
+        AbstractClient.someClientCode(factory: ConcreteFactory2())
+        
+    }
+    
+    //生成器
+    func builderClientTest() {
+        
+        let director = Director()
+        BuilderClient.someClientCode(director: director)
+    }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {

@@ -18,6 +18,10 @@
 		4A893D0D27E8B02700ABC441 /* DesignUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D0C27E8B02700ABC441 /* DesignUITestsLaunchTests.swift */; };
 		4A893D1B27E9724D00ABC441 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D1A27E9724C00ABC441 /* Factory.swift */; };
 		4A893D1C27E9724D00ABC441 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D1A27E9724C00ABC441 /* Factory.swift */; };
+		4A893D1E27E979E500ABC441 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D1D27E979E500ABC441 /* AbstractFactory.swift */; };
+		4A893D1F27E979E500ABC441 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D1D27E979E500ABC441 /* AbstractFactory.swift */; };
+		4A893D2327E9ABEC00ABC441 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D2227E9ABEC00ABC441 /* Builder.swift */; };
+		4A893D2427E9ABEC00ABC441 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D2227E9ABEC00ABC441 /* Builder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,8 @@
 		4A893D0A27E8B02700ABC441 /* DesignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignUITests.swift; sourceTree = "<group>"; };
 		4A893D0C27E8B02700ABC441 /* DesignUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4A893D1A27E9724C00ABC441 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		4A893D1D27E979E500ABC441 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		4A893D2227E9ABEC00ABC441 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		4A893CE827E8B02500ABC441 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				4A893D2127E9ABCC00ABC441 /* Builder */,
 				4A893D1927E96ACF00ABC441 /* Factory */,
 				4A893CE927E8B02500ABC441 /* AppDelegate.swift */,
 				4A893CEB27E8B02500ABC441 /* SceneDelegate.swift */,
@@ -135,8 +142,17 @@
 			isa = PBXGroup;
 			children = (
 				4A893D1A27E9724C00ABC441 /* Factory.swift */,
+				4A893D1D27E979E500ABC441 /* AbstractFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		4A893D2127E9ABCC00ABC441 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D2227E9ABEC00ABC441 /* Builder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +288,10 @@
 			files = (
 				4A893D1B27E9724D00ABC441 /* Factory.swift in Sources */,
 				4A893CEE27E8B02500ABC441 /* ViewController.swift in Sources */,
+				4A893D1E27E979E500ABC441 /* AbstractFactory.swift in Sources */,
 				4A893CEA27E8B02500ABC441 /* AppDelegate.swift in Sources */,
 				4A893CEC27E8B02500ABC441 /* SceneDelegate.swift in Sources */,
+				4A893D2327E9ABEC00ABC441 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A893D1F27E979E500ABC441 /* AbstractFactory.swift in Sources */,
 				4A893D1C27E9724D00ABC441 /* Factory.swift in Sources */,
 				4A893D0127E8B02700ABC441 /* DesignTests.swift in Sources */,
+				4A893D2427E9ABEC00ABC441 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
