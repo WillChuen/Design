@@ -83,8 +83,7 @@ class DogHandler: Handler {
     }
 }
 
-/// The client code is usually suited to work with a single handler. In most
-/// cases, it is not even aware that the handler is part of a chain.
+///客户端 （Client） 可根据程序逻辑一次性或者动态地生成链。 值得注意的是， 请求可发送给链上的任意一个处理者， 而非必须是第一个处理者。
 class ChainClient {
     // ...
     static func someClientCode(handler: Handler) {
@@ -102,7 +101,7 @@ class ChainClient {
     // ...
 }
 
-/// Let's see how it all works together.
+/// 测试用例
 class ChainOfResponsibilityConceptual: XCTestCase {
  
     func test() {
