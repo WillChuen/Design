@@ -6,36 +6,37 @@
 //
 
 import Foundation
+import XCTest
 
-/// The Component interface declares an `accept` method that should take the
-/// base visitor interface as an argument.
+/*
+访问者模式是一种行为设计模式， 它能将算法与其所作用的对象隔离开来。
+访问者模式结构
+1 访问者 （Visitor） 接口声明了一系列以对象结构的具体元素为参数的访问者方法。 如果编程语言支持重载， 这些方法的名称可以是相同的， 但是其参数一定是不同的。
+2 具体访问者 （Concrete Visitor） 会为不同的具体元素类实现相同行为的几个不同版本。
+3 元素 （Element） 接口声明了一个方法来 “接收” 访问者。 该方法必须有一个参数被声明为访问者接口类型。
+4 具体元素 （Concrete Element） 必须实现接收方法。 该方法的目的是根据当前元素类将其调用重定向到相应访问者的方法。 请注意， 即使元素基类实现了该方法， 所有子类都必须对其进行重写并调用访问者对象中的合适方法。
+5 客户端 （Client） 通常会作为集合或其他复杂对象 （例如一个组合树） 的代表。 客户端通常不知晓所有的具体元素类， 因为它们会通过抽象接口与集合中的对象进行交互。
+ */
+
+///元素 （Element） 接口声明了一个方法来 “接收” 访问者。 该方法必须有一个参数被声明为访问者接口类型。
 protocol VisitorComponent {
-
     func accept(_ visitor: Visitor)
 }
 
-/// Each Concrete Component must implement the `accept` method in such a way
-/// that it calls the visitor's method corresponding to the component's class.
-class ConcreteComponentA: VisitorComponent {
-
-    /// Note that we're calling `visitConcreteComponentA`, which matches the
-    /// current class name. This way we let the visitor know the class of the
-    /// component it works with.
+///具体元素 （Concrete Element） 必须实现接收方法。 该方法的目的是根据当前元素类将其调用重定向到相应访问者的方法。 请注意， 即使元素基类实现了该方法， 所有子类都必须对其进行重写并调用访问者对象中的合适方法。
+class VisitorComponentA: VisitorComponent {
+    
     func accept(_ visitor: Visitor) {
         visitor.visitConcreteComponentA(element: self)
     }
-
-    /// Concrete Components may have special methods that don't exist in their
-    /// base class or interface. The Visitor is still able to use these methods
-    /// since it's aware of the component's concrete class.
     func exclusiveMethodOfConcreteComponentA() -> String {
         return "A"
     }
 }
 
-class ConcreteComponentB: VisitorComponent {
-
-    /// Same here: visitConcreteComponentB => ConcreteComponentB
+///具体元素 （Concrete Element） 必须实现接收方法。 该方法的目的是根据当前元素类将其调用重定向到相应访问者的方法。 请注意， 即使元素基类实现了该方法， 所有子类都必须对其进行重写并调用访问者对象中的合适方法。
+class VisitorComponentB: VisitorComponent {
+    
     func accept(_ visitor: Visitor) {
         visitor.visitConcreteComponentB(element: self)
     }
@@ -45,53 +46,53 @@ class ConcreteComponentB: VisitorComponent {
     }
 }
 
-/// The Visitor Interface declares a set of visiting methods that correspond to
-/// component classes. The signature of a visiting method allows the visitor to
-/// identify the exact class of the component that it's dealing with.
+///访问者 （Visitor） 接口声明了一系列以对象结构的具体元素为参数的访问者方法。 如果编程语言支持重载， 这些方法的名称可以是相同的， 但是其参数一定是不同的。
 protocol Visitor {
 
-    func visitConcreteComponentA(element: ConcreteComponentA)
-    func visitConcreteComponentB(element: ConcreteComponentB)
+    func visitConcreteComponentA(element: VisitorComponentA)
+    func visitConcreteComponentB(element: VisitorComponentB)
 }
 
-/// Concrete Visitors implement several versions of the same algorithm, which
-/// can work with all concrete component classes.
-///
-/// You can experience the biggest benefit of the Visitor pattern when using it
-/// with a complex object structure, such as a Composite tree. In this case, it
-/// might be helpful to store some intermediate state of the algorithm while
-/// executing visitor's methods over various objects of the structure.
+///具体访问者 （Concrete Visitor） 会为不同的具体元素类实现相同行为的几个不同版本。
 class ConcreteVisitor1: Visitor {
-
-    func visitConcreteComponentA(element: ConcreteComponentA) {
+    
+    func visitConcreteComponentA(element: VisitorComponentA) {
         print(element.exclusiveMethodOfConcreteComponentA() + " + ConcreteVisitor1\n")
     }
-
-    func visitConcreteComponentB(element: ConcreteComponentB) {
+    func visitConcreteComponentB(element: VisitorComponentB) {
         print(element.specialMethodOfConcreteComponentB() + " + ConcreteVisitor1\n")
     }
 }
 
+///具体访问者 （Concrete Visitor） 会为不同的具体元素类实现相同行为的几个不同版本。
 class ConcreteVisitor2: Visitor {
-
-    func visitConcreteComponentA(element: ConcreteComponentA) {
+    
+    func visitConcreteComponentA(element: VisitorComponentA) {
         print(element.exclusiveMethodOfConcreteComponentA() + " + ConcreteVisitor2\n")
     }
-
-    func visitConcreteComponentB(element: ConcreteComponentB) {
+    func visitConcreteComponentB(element: VisitorComponentB) {
         print(element.specialMethodOfConcreteComponentB() + " + ConcreteVisitor2\n")
     }
 }
 
-/// The client code can run visitor operations over any set of elements without
-/// figuring out their concrete classes. The accept operation directs a call to
-/// the appropriate operation in the visitor object.
 class VisitorClient {
-    // ...
+    
     static func clientCode(components: [VisitorComponent], visitor: Visitor) {
-        // ...
         components.forEach({ $0.accept(visitor) })
-        // ...
     }
-    // ...
+}
+
+/// Let's see how it all works together.
+class VisitorConceptual: XCTestCase {
+
+    func test() {
+        
+        let components: [VisitorComponent] = [VisitorComponentA(), VisitorComponentB()]
+        print("The client code works with all visitors via the base Visitor interface:\n")
+        let visitor1 = ConcreteVisitor1()
+        VisitorClient.clientCode(components: components, visitor: visitor1)
+        print("\nIt allows the same client code to work with different types of visitors:\n")
+        let visitor2 = ConcreteVisitor2()
+        VisitorClient.clientCode(components: components, visitor: visitor2)
+    }
 }
