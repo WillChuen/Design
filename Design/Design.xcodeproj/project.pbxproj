@@ -61,6 +61,8 @@
 		4A893D6F27EA0EDA00ABC441 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D6E27EA0EDA00ABC441 /* Visitor.swift */; };
 		4A893D7027EA0EDA00ABC441 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D6E27EA0EDA00ABC441 /* Visitor.swift */; };
 		4A893D7427EA1BA100ABC441 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A893D7327EA1BA100ABC441 /* XCTest.framework */; };
+		4A893D7727EB061500ABC441 /* FactoryEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D7627EB061400ABC441 /* FactoryEx.swift */; };
+		4A893D7827EB061500ABC441 /* FactoryEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A893D7627EB061400ABC441 /* FactoryEx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,7 @@
 		4A893D6A27EA0DCB00ABC441 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		4A893D6E27EA0EDA00ABC441 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		4A893D7327EA1BA100ABC441 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4A893D7627EB061400ABC441 /* FactoryEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryEx.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +224,7 @@
 		4A893D1927E96ACF00ABC441 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				4A893D7527EB05D400ABC441 /* Example */,
 				4A893D1A27E9724C00ABC441 /* Factory.swift */,
 				4A893D1D27E979E500ABC441 /* AbstractFactory.swift */,
 			);
@@ -395,6 +399,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4A893D7527EB05D400ABC441 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				4A893D7627EB061400ABC441 /* FactoryEx.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -543,6 +555,7 @@
 				4A893D2727E9BB5100ABC441 /* Clone.swift in Sources */,
 				4A893D2B27E9C1DB00ABC441 /* Singleton.swift in Sources */,
 				4A893CEC27E8B02500ABC441 /* SceneDelegate.swift in Sources */,
+				4A893D7727EB061500ABC441 /* FactoryEx.swift in Sources */,
 				4A893D3727E9E70100ABC441 /* Combination.swift in Sources */,
 				4A893D6727EA0C6000ABC441 /* Strategy.swift in Sources */,
 				4A893D5327EA031600ABC441 /* Iterator.swift in Sources */,
@@ -573,6 +586,7 @@
 				4A893D2827E9BB5100ABC441 /* Clone.swift in Sources */,
 				4A893D5027EA026300ABC441 /* Command.swift in Sources */,
 				4A893D4027E9FE7500ABC441 /* Facade.swift in Sources */,
+				4A893D7827EB061500ABC441 /* FactoryEx.swift in Sources */,
 				4A893D4C27EA01BA00ABC441 /* Chain.swift in Sources */,
 				4A893D3427E9D86900ABC441 /* Bridge.swift in Sources */,
 				4A893D0127E8B02700ABC441 /* DesignTests.swift in Sources */,
