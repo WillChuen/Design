@@ -86,7 +86,7 @@
 
 /* Begin PBXFileReference section */
 		4A3A48692C36B72300E67AD1 /* WechatIMG123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WechatIMG123.png; sourceTree = "<group>"; };
-		4A82FC922C36C3EF00265E15 /* LDShop.GG.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LDShop.GG.plist; sourceTree = "<group>"; };
+		4A82FC922C36C3EF00265E15 /* manifest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = manifest.plist; sourceTree = "<group>"; };
 		4A82FC942C36C4AC00265E15 /* LDShop.GG.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = LDShop.GG.ipa; sourceTree = "<group>"; };
 		4A893CE627E8B02500ABC441 /* Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A893CE927E8B02500ABC441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 			children = (
 				4A3A48692C36B72300E67AD1 /* WechatIMG123.png */,
 				4A82FC942C36C4AC00265E15 /* LDShop.GG.ipa */,
-				4A82FC922C36C3EF00265E15 /* LDShop.GG.plist */,
+				4A82FC922C36C3EF00265E15 /* manifest.plist */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
