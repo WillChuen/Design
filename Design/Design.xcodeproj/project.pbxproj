@@ -88,6 +88,7 @@
 		4A3A48692C36B72300E67AD1 /* WechatIMG123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WechatIMG123.png; sourceTree = "<group>"; };
 		4A82FC922C36C3EF00265E15 /* manifest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = manifest.plist; sourceTree = "<group>"; };
 		4A82FC942C36C4AC00265E15 /* LDShop.GG.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = LDShop.GG.ipa; sourceTree = "<group>"; };
+		4A82FC952C36CB7900265E15 /* btcdoApp.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = btcdoApp.ipa; sourceTree = "<group>"; };
 		4A893CE627E8B02500ABC441 /* Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A893CE927E8B02500ABC441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A893CEB27E8B02500ABC441 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				4A3A48692C36B72300E67AD1 /* WechatIMG123.png */,
+				4A82FC952C36CB7900265E15 /* btcdoApp.ipa */,
 				4A82FC942C36C4AC00265E15 /* LDShop.GG.ipa */,
 				4A82FC922C36C3EF00265E15 /* manifest.plist */,
 			);
