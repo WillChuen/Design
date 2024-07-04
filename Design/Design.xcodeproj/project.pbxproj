@@ -86,6 +86,7 @@
 
 /* Begin PBXFileReference section */
 		4A3A48672C36930D00E67AD1 /* LDShop.GG.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = LDShop.GG.ipa; sourceTree = "<group>"; };
+		4A3A48682C36B58D00E67AD1 /* LDShop.GG.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LDShop.GG.plist; sourceTree = "<group>"; };
 		4A893CE627E8B02500ABC441 /* Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A893CE927E8B02500ABC441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A893CEB27E8B02500ABC441 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 		4A3A48662C3692E900E67AD1 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
+				4A3A48682C36B58D00E67AD1 /* LDShop.GG.plist */,
 				4A3A48672C36930D00E67AD1 /* LDShop.GG.ipa */,
 			);
 			path = Shop;
