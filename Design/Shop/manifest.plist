@@ -17,25 +17,25 @@
                     <key>kind</key>
                     <string>full-size-image</string>
                     <key>url</key>
-                    <string>http://q1vnt9feu.bkt.clouddn.com/57.png</string>
+                    <string>https://ld-space.oss-ap-southeast-1.aliyuncs.com/app/ios/logo.jpg</string>
                 </dict>
                 <dict>
                     <key>kind</key>
                     <string>display-image</string>
                     <key>url</key>
-                    <string>http://q1vnt9feu.bkt.clouddn.com/512.png</string>
+                    <string>https://ld-space.oss-ap-southeast-1.aliyuncs.com/app/ios/logo.jpg</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>qihang.purbull.app</string>
+                <string>com.ldshop.gg</string>
                 <key>bundle-version</key>
                 <string>1.0.0</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>EasyBtc</string>
+                <string>LDShop.GG</string>
             </dict>
         </dict>
     </array>
