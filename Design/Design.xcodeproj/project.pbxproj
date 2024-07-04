@@ -87,7 +87,7 @@
 /* Begin PBXFileReference section */
 		4A3A48672C36930D00E67AD1 /* LDShop.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = LDShop.ipa; sourceTree = "<group>"; };
 		4A3A48682C36B58D00E67AD1 /* LDShop.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LDShop.plist; sourceTree = "<group>"; };
-		4A3A48692C36B72300E67AD1 /* WechatIMG123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG123.jpg; sourceTree = "<group>"; };
+		4A3A48692C36B72300E67AD1 /* WechatIMG123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WechatIMG123.png; sourceTree = "<group>"; };
 		4A893CE627E8B02500ABC441 /* Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A893CE927E8B02500ABC441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A893CEB27E8B02500ABC441 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		4A3A48662C3692E900E67AD1 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
-				4A3A48692C36B72300E67AD1 /* WechatIMG123.jpg */,
+				4A3A48692C36B72300E67AD1 /* WechatIMG123.png */,
 				4A3A48682C36B58D00E67AD1 /* LDShop.plist */,
 				4A3A48672C36930D00E67AD1 /* LDShop.ipa */,
 			);
